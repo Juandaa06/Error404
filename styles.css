@@ -120,3 +120,38 @@ h1{
   position: absolute;
   bottom:12vmin;
 }
+
+
+  /* Animación de rotación */
+@keyframes rotate-clockwise {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes rotate-counterclockwise {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  
+  /* Animación del parpadeo del mensaje */
+  .wrong-para {
+    animation: blink 2s ease-in-out infinite;
+  }
+  
+  @keyframes blink {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
